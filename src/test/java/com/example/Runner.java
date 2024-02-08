@@ -12,7 +12,6 @@ public class Runner extends Simulation {
     private static final HttpProtocolBuilder httpProtocol = ProtocolConfiguration.getHttpProtocol();
     private static final ScenarioBuilder scn = ScenarioConfiguration.getScenario();
 
-
     {
         setUp(
                 scn.injectOpen(atOnceUsers(1))
