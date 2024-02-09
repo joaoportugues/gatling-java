@@ -1,16 +1,16 @@
-package com.example;
+package com.example.simulations;
 
 import com.example.configurations.ProtocolConfiguration;
-import com.example.configurations.ScenarioConfiguration;
+import com.example.builders.ScenarioBuilder;
 import io.gatling.javaapi.core.*;
 import io.gatling.javaapi.http.*;
 
 import static io.gatling.javaapi.core.CoreDsl.*;
 import static io.gatling.javaapi.http.HttpDsl.http;
 
-public class Runner extends Simulation {
+public class TestSimulation extends Simulation {
     private static final HttpProtocolBuilder httpProtocol = ProtocolConfiguration.getHttpProtocol();
-    private static final ScenarioBuilder scn = ScenarioConfiguration.getScenario();
+    private static final io.gatling.javaapi.core.ScenarioBuilder scn = ScenarioBuilder.getScenario();
 
     {
         setUp(

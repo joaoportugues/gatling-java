@@ -29,7 +29,7 @@
                 <artifactId>gatling-maven-plugin</artifactId>
                 <version>4.8.1</version>
                 <configuration>
-                    <simulationClass>com.example.Runner</simulationClass>
+                    <simulationClass>com.example.simulations.TestSimulation</simulationClass>
                 </configuration>
                 <executions>
                     <execution>
